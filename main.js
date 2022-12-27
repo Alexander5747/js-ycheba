@@ -75,10 +75,63 @@
 //         }
 //         console.log(count, split);
 // })
-let date = document.querySelector("#date");
-date.addEventListener('blur', function(){
-    let d = date.value.split(".")
-    let p = d.reverse()
-    let res =p.join("-")
-    date.value = res
-});
+// let date = document.querySelector("#date");
+// date.addEventListener('blur', function(){
+//     let d = date.value.split(".")
+//     let p = d.reverse()
+//     let res =p.join("-")
+//     date.value = res
+// });
+// let elem = document.querySelector('#elem');
+// let button =document.querySelector("#button");
+// button.addEventListener('click', function(){
+//     let sp = elem.value.split('');
+//     let rev = sp.reverse()
+//     let joins = rev.join('')
+//     let el =  elem.value;
+
+//     if(el == joins){
+//         console.log('слово читатся и сконца и сначала одинаково');
+  
+//     }
+//     else{
+//         console.log("ошибка");
+//     }
+// });
+// let elem = document.querySelector('#elem')
+// elem.addEventListener('blur', function(){
+//     let num = +elem.value;
+//     if(num == 3){
+//         console.log('input содержит число 3');
+//     }
+//     else{
+//         console.log('input не содержит число 3');
+//     }
+// });
+// let p = document.querySelectorAll('p');
+// let button = document.querySelector('#button');
+// button.addEventListener('click', function(){
+//     let count = 0;
+//     for(let elem of p){
+//         count+=1;
+//         elem.textContent+=count
+//     }
+// });
+// let a = document.querySelectorAll('a');
+// for(let elem of a){
+//     elem.textContent+`(${elem.href})`;
+// }
+// let a =document.querySelectorAll('a');
+// for(let elem of a){
+//     elem.textContent+=elem.href;
+//     if(elem.text.startsWith('http://')){
+//         elem.textContent+="&rarr";
+//     }
+// }
+let p = document.querySelectorAll('#ps');
+for(let elem of p){
+    elem.addEventListener('click', function(){
+        elem.textContent=+elem.textContent*+elem.textContent
+        // console.log( elem.textContent);
+    })
+}
