@@ -59,5 +59,26 @@
 //     I.value=res[1];
 //     O.value=res[2];
 // })
+// let elem = document.querySelector("#FIO");
+// elem.addEventListener('blur', function(){
+//     elem.classList.add('up-text');
+// })
+// let elem = document.querySelector('#elem');
 
-
+// elem.addEventListener('blur', function(){
+//         let count = 0;
+//         let split = elem.value.split(' ');
+//         for (let i = 0; i < split.length ; i++) {
+//             if (split[i] != "") {
+//             count += 1;
+//             }
+//         }
+//         console.log(count, split);
+// })
+let date = document.querySelector("#date");
+date.addEventListener('blur', function(){
+    let d = date.value.split(".")
+    let p = d.reverse()
+    let res =p.join("-")
+    date.value = res
+});
