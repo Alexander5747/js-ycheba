@@ -128,10 +128,123 @@
 //         elem.textContent+="&rarr";
 //     }
 // }
-let p = document.querySelectorAll('#ps');
-for(let elem of p){
-    elem.addEventListener('click', function(){
-        elem.textContent=+elem.textContent*+elem.textContent
-        // console.log( elem.textContent);
-    })
-}
+// let p = document.querySelectorAll('#ps');
+// for(let elem of p){
+//     elem.addEventListener('click', function(){
+//         elem.textContent=+elem.textContent*+elem.textContent
+
+//     })
+// }
+// let input = document.querySelector('input');
+// input.addEventListener('blur', function(){
+// 	let arr = input.value.split('.');
+// 	arr.reverse();
+// 	let date = new Date(Number(arr[0]),Number(arr[1])-1,Number(arr[2]));
+// 	let dni = ["воскресенье","понедельник","вторник","среда","четверг","пятница","суббота"];
+// 	console.log( 'день недели: '+date.getDay()+' - '+dni[date.getDay()]);
+// })
+// let input = document.querySelector('#el');
+// let sum = document.querySelector('#sum');
+// let ras = document.querySelector('#ras');
+// sum.addEventListener('click', function(){
+//  let num = +input.value;
+//  num+=1
+// input.value=num
+// });
+// ras.addEventListener('click', function(){
+//     let num = +input.value;
+//     num-=1
+//     input.value=num
+//     if(input.value<=0){
+//         input.value=0
+//     }
+//    });
+// let input = document.querySelector('input');
+// let p = document.querySelectorAll('p')
+// let count = 0;
+// for(let elem of p){
+//     elem.addEventListener('click', function(){
+//         count+=1
+//         input.value = count
+//     });
+
+// }
+// let div =document.querySelectorAll('div');
+// for(let elem of div){
+//     elem.textContent = elem.textContent.substr(0,9)+'...';
+// }
+// let num = document.querySelector('input');
+// num.addEventListener('blur', function(){
+//     let n = +num.value
+//     if(n>=1 && n<=100){
+//         num.style.color = 'green'
+//     }
+//     else{
+//         num.style.color = 'red'
+//     }
+// });
+// let input = document.querySelector('input');
+//   let btn = document.querySelector('#button');
+
+//   btn.addEventListener('click', random);
+
+//   function random() {
+//     let str = '';
+//     let possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+//     for (let i = 0; i < 8; i++) {
+//       str += possible.charAt(Math.floor(Math.random() * possible.length));
+//     }
+
+//     input.value = str;
+//   }
+// let input = document.querySelector('input');
+//   let btn = document.querySelector('#button');
+
+//   btn.addEventListener('click', random);
+
+//   function random() {
+//     let str = '';
+//     let possible = input.value;
+
+//     for (let i = 0; i < 8; i++) {
+//       str += possible.charAt(Math.floor(Math.random() * possible.length));
+//     }
+
+//     input.value = str;
+//   }
+// let input = document.querySelector('input');
+// let p  = document.querySelector('p');
+// let button = document.querySelector('#button');
+// button.addEventListener('click', function(){
+//     let num  = +input.value
+//     p.textContent = (num - 32)/1.8 
+// });
+// let t1 = document.querySelector('#t1');
+// let button = document.querySelector('#button');
+// let p = document.querySelector('p');
+
+// button.addEventListener('click', function(){
+//     let n =+t1.value
+//     function factorial(n){
+//         let result = 1;
+//         while(n){
+//             result *= n--;
+//         }
+//         return result;
+//     }
+//     p.textContent = factorial(n)
+// });
+// let t1 = document.querySelector('#t1');
+// let t2 = document.querySelector('#t1-1');
+// let t3 = document.querySelector('#t1-2');
+// let button = document.querySelector('#button');
+// let p = document.querySelector('p');
+// button.addEventListener('click', function(){
+//     let n1=+t1.value, n2=+t2.value, n3=+t3.value;
+//     let d = ((n2)**2)-4*n1*n3
+//     let x1 = (-n2 + Math.sqrt(d))/(2*n1)
+//     let x2 = (-n2 - Math.sqrt(d))/(2*n1)
+//     console.log(x1, x2);
+    
+// });
